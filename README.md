@@ -7,8 +7,8 @@ dplyr,ggplot2, MASS(negative binomial model), car, DHARMa(Dispersion test)
 glm.RR, testtools
 
 ## Dataset
-1308 observation of homicide victims categoried by race(white/black) /n
-**resp:** numbers of victims observed /n
+1308 observation of homicide victims categoried by race(white/black)                                          
+**resp:** numbers of victims observed                                     
 **race:** black/white
 
 ## Model Fitting
@@ -55,8 +55,8 @@ Both negative binomial model and quasi-poisson model perform better than the cla
 | (Intercept)  | 0.52  | 0.42 | 0.64 |
 | race  | 0.18  | 0.13 | 0.24 |
 
-mean response(race:black) = 0.522
-mean response(race:white) = 0.092
-Ratio = 0.522/0.092 = 5.66 = 1/RR = 1/0.18
+mean response(race:black) = 0.522                                  
+mean response(race:white) = 0.092                              
+Ratio = 0.522/0.092 = 5.66 = 1/RR = 1/0.18                 
 Average number of victims known is 5.66 as many for black people as for white people
 
