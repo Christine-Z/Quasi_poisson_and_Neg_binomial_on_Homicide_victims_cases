@@ -7,8 +7,8 @@ dplyr,ggplot2, MASS(negative binomial model), car, DHARMa(Dispersion test)
 glm.RR, testtools
 
 ## Dataset
-1308 observation of homicide victims categoried by race(white/black)
-**resp:** numbers of victims observed
+1308 observation of homicide victims categoried by race(white/black) /n
+**resp:** numbers of victims observed /n
 **race:** black/white
 
 ## Model Fitting
