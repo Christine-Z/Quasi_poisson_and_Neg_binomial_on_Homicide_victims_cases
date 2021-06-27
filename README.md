@@ -50,9 +50,10 @@ Both negative binomial model and quasi-poisson model perform better than the cla
 
 ## Risk Ratio and the ratio of mean response in poisson model
 
->               RR      2.5%   97.5 %
->  (Intercept)  0.52    0.42   0.64
->   race        0.18    0.13   0.24
+|     | RR  | 2.5% | 97.5 % |
+| --- | --- | ---- | -------|
+| (Intercept)  | 0.52  | 0.42 | 0.64 |
+| race  | 0.18  | 0.13 | 0.24 |
 
 mean response(race:black) = 0.522
 mean response(race:white) = 0.092
