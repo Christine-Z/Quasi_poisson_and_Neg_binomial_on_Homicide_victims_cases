@@ -133,7 +133,7 @@ comparison
 
 ## Plotting variance function
 xb<-predict(model_nb)
-g<-cut(xb, breaks=-2:0)
+g<-cut(xb, breaks=-2.5:0)
 m<-tapply(data$resp,g,mean)
 v<-tapply(data$resp,g,var)
 plot(m,v,xlab="Mean",ylab="Variance",main="Mean-Variance Relationship", xlim = c(0,1), ylim = c(0,2))
