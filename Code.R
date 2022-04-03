@@ -124,11 +124,11 @@ theta <- model_nb$theta
 nb_var_b <- exp(beta0) + (1/theta)*exp(beta0)^2
 nb_var_w <- exp(beta0 + beta1) + (1/theta)*exp(beta0 + beta1)^2
 
-qs_var_b <- sum_qs$dispersion * (-model_qs$coefficients[1])
-qs_var_w <- sum_qs$dispersion * (-model_qs$coefficients[2])
+qs_var_b <- sum_qs$dispersion * exp(model_qs$coefficients[1])
+qs_var_w <- sum_qs$dispersion * exp(model_qs$coefficients[1]+model_qs$coefficients[2])
 
 comparison <- round(cbind(rbind(obs_var_b,obs_var_w),rbind(nb_var_b,nb_var_w),rbind(mu_black,mu_white),rbind(qs_var_b,qs_var_w)), 3)
-colnames(comparison) <- c("observed","neg.bin_model_based","poisson","quasi-possion")
+colnames(comparison) <- c("observed","neg.bin_model_based","poisson","quasi-poisson")
 comparison
 
 ## Plotting variance function
